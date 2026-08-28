@@ -1,0 +1,38 @@
+extends layout
+
+block main
+  section.section
+    div.page-head
+      h1 Shows
+      p.page-intro Where to find fwb next, and the joints we have played. Swap in real dates, venues, and ticket links.
+
+  section.section
+    div.section-head
+      h2 Upcoming Shows
+    if upcoming && upcoming.length
+      div.show-list
+        each show in upcoming
+          article.show-card
+            div.show-card-date
+              span= show.date
+            div.show-card-body
+              h3.show-card-venue= show.venue
+              p.show-card-city= show.city
+              if show.detail
+                p.show-card-detail= show.detail
+            a.btn(href=show.link target=(show.link === '#' ? '_self' : '_blank')) Tickets
+    else
+      div.show-empty
+        p No dates on the calendar right now. Check back soon.
+
+  section.section
+    div.section-head
+      h2 Past Shows
+    div.show-list
+      each show in past
+        div.show-row
+          span.show-row-mark(aria-hidden="true")
+          span.show-row-date= show.date
+          span.show-row-venue= show.venue
+          span.show-row-city= show.city
+          a.btn.btn-ghost(href=show.link target=(show.link === '#' ? '_self' : '_blank')) Info

@@ -1,0 +1,46 @@
+doctype html
+html(lang="en")
+  head
+    title friends w/ benefits
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(name="description", content="friends w/ benefits (fwb) is a band. Music, releases, and shows.")
+    meta(name="theme-color", content="#1f4fa6")
+    link(rel="preconnect" href="https://fonts.googleapis.com")
+    link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600;700;800&display=swap")
+    link(rel="stylesheet" href="/stylesheets/whitespace-reset.css")
+    link(rel="stylesheet" href="/stylesheets/app.css")
+    link(rel='shortcut icon' type='image/ico' href='/public/images/favicon.ico')
+
+  body
+    div.wrapper
+      nav.navbar
+        div.container
+          div#logo.extra-bold
+            a(href="/") fwb
+          ul.nav
+            li
+              a(href="/music") Music
+            li
+              a(href="/shows") Shows
+            li
+              a(href="/about") About
+            li
+              a(href="/contact") Contact
+
+      block header
+
+      main
+        block main
+
+      footer.site-footer
+        div.container
+          p fwb
+          p
+            a(href="mailto:hello@fwb.clintspacewood.com") hello@fwb.clintspacewood.com
+          p.footer-parent
+            | A Clint Spacewood band &mdash;
+            |  
+            a(href="https://clintspacewood.com" target="_blank") clintspacewood.com
