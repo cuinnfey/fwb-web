@@ -1,0 +1,22 @@
+extends layout
+
+block main
+  section.section
+    div.page-head
+      h1 Music
+      p.page-intro Singles, EPs, and live sessions from fwb. Head to the contact page for bookings and collaboration.
+    div.card-grid
+      each release in releases
+        article.tile
+          a(href=release.link target=(release.link === '#' ? '_self' : '_blank'))
+            div.tile-media
+              if release.image
+                img(src=release.image alt=release.name)
+              else
+                div.media-placeholder(aria-hidden="true")
+                  span Cover
+            div.tile-body
+              span.tile-tag= release.tag
+              h3.tile-title= release.name
+              p.tile-meta= release.year
+              p.tile-blurb= release.blurb

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Debut Single",
+    "tag": "Single",
+    "year": "2024",
+    "blurb": "The first song from fwb. Swap in the real title, cover art, and a streaming link.",
+    "image": "",
+    "link": "#"
+  },
+  {
+    "name": "Second Release",
+    "tag": "EP",
+    "year": "2025",
+    "blurb": "A short description of this release. Replace with real copy, cover art, and a link out.",
+    "image": "",
+    "link": "#"
+  },
+  {
+    "name": "Live Session",
+    "tag": "Live",
+    "year": "2025",
+    "blurb": "A recorded live take. Add the real details, artwork, and a place for people to listen.",
+    "image": "",
+    "link": "#"
+  }
+]
