@@ -4,28 +4,18 @@ block header
   header.hero
     div.container
       div.hero-wordmark
-        span.kicker Now cruising
-        span.script friends w/ benefits
+        span.kicker= home.wordmark.kicker
+        span.script= home.wordmark.title
       div.carousel
-        input#slide-1.carousel-input(type="radio" name="carousel" checked)
-        input#slide-2.carousel-input(type="radio" name="carousel")
-        input#slide-3.carousel-input(type="radio" name="carousel")
+        each slide, index in home.carousel
+          input(id=`slide-${index + 1}` class="carousel-input" type="radio" name="carousel" checked=(index === 0))
         div.carousel-track
-          div.carousel-slide
-            div.media-placeholder(aria-hidden="true")
-              span Photo 1
-          div.carousel-slide
-            div.media-placeholder(aria-hidden="true")
-              span Photo 2
-          div.carousel-slide
-            div.media-placeholder(aria-hidden="true")
-              span Photo 3
+          each slide in home.carousel
+            div.carousel-slide
+              img(src=slide.image alt=slide.alt)
         div.carousel-dots
-          label(for="slide-1" aria-label="Show photo 1")
-          label(for="slide-2" aria-label="Show photo 2")
-          label(for="slide-3" aria-label="Show photo 3")
-      div.hero-intro
-        p fwb is two friends, one red moped, and a whole lot of songs. Sunny, loud, and a little bit silly &mdash; pull up a lawn chair.
+          each slide, index in home.carousel
+            label(for=`slide-${index + 1}` aria-label=`Show photo ${index + 1}`)
 
 block main
   section.section

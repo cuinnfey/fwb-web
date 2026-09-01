@@ -1,0 +1,17 @@
+{
+  "band": {
+    "title": "The band",
+    "text": "Two friends makin' silly songs",
+    "image": "/images/artist-photo.png"
+  },
+  "whatWeDo": {
+    "title": "What we do",
+    "items": [
+      "Writing and recording new music",
+      "Playing live shows and sessions",
+      "Collaborating with other artists"
+    ],
+    "text": "Want to work together or book a show? Head to the contact page and say hello.",
+    "image": ""
+  }
+}

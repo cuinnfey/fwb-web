@@ -1,0 +1,24 @@
+{
+  "wordmark": {
+    "kicker": "Now cruising",
+    "title": "friends w/ benefits"
+  },
+  "carousel": [
+    {
+      "image": "/images/couch-in-the-rain-art.png",
+      "alt": "Couch in the Rain artwork"
+    },
+    {
+      "image": "/images/fwb-artist.png",
+      "alt": "FWB artwork"
+    },
+    {
+      "image": "/images/rome-art.png",
+      "alt": "Rome artwork"
+    },
+    {
+      "image": "/images/self-checkout-art.png",
+      "alt": "Self Checkout artwork"
+    }
+  ]
+}

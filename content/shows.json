@@ -1,35 +1,14 @@
 {
   "upcoming": [
     {
-      "date": "APR 18, 2026",
-      "venue": "The Keep",
-      "city": "Seattle, WA",
-      "detail": "With special guests. Doors at 8pm.",
-      "link": "#",
-      "image": ""
-    },
-    {
-      "date": "MAY 02, 2026",
-      "venue": "Barrelhouse Hall",
-      "city": "Portland, OR",
-      "detail": "All ages. Tickets on sale now.",
-      "link": "#",
-      "image": ""
-    },
-    {
-      "date": "MAY 23, 2026",
-      "venue": "The Undercroft",
-      "city": "Vancouver, BC",
-      "detail": "Late show. 19+.",
+      "date": "",
+      "venue": "",
+      "city": "",
+      "detail": "",
       "link": "#",
       "image": ""
     }
   ],
   "past": [
-    { "date": "02/13/2026", "venue": "Addaball", "city": "Seattle, WA", "link": "#" },
-    { "date": "01/24/2026", "venue": "Neumos", "city": "Seattle, WA", "link": "#" },
-    { "date": "11/09/2025", "venue": "The Crocodile", "city": "Seattle, WA", "link": "#" },
-    { "date": "09/30/2025", "venue": "Mississippi Studios", "city": "Portland, OR", "link": "#" },
-    { "date": "08/15/2025", "venue": "The Fortress", "city": "Tacoma, WA", "link": "#" }
   ]
 }

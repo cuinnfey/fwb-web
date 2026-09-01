@@ -3,6 +3,9 @@ const morgan = require("morgan");
 const favicon = require("serve-favicon");
 const releases = require("./content/releases.json");
 const shows = require("./content/shows.json");
+const about = require("./content/about.json");
+const contact = require("./content/contact.json");
+const home = require("./content/home.json");
 
 const app = express();
 const host = process.env.HOST || "0.0.0.0";
@@ -28,7 +31,7 @@ app.use((req, res, next) => {
 app.use(favicon(__dirname + '/public/images/favicon.ico'));
 
 app.get('/', (req, res) => {
-  res.render("home", { releases });
+  res.render("home", { releases, home });
 });
 
 app.get("/music", (req, res) => {
@@ -40,11 +43,11 @@ app.get("/shows", (req, res) => {
 });
 
 app.get("/about", (req, res) => {
-  res.render("about");
+  res.render("about", { about });
 });
 
 app.get("/contact", (req, res) => {
-  res.render("contact");
+  res.render("contact", { contact });
 });
 
 

@@ -4,20 +4,19 @@ block main
   section.section
     div.page-head
       h1 Contact
-      p.page-intro For bookings, shows, or collaboration &mdash; get in touch.
+      p.page-intro= contact.intro
 
     div.contact-grid
       div.contact-card
         h2 Get in touch
         p Email us directly and we will get back to you.
-        a.btn(href="mailto:hello@fwb.clintspacewood.com") hello@fwb.clintspacewood.com
+        a.btn(href=`mailto:${contact.email}`)= contact.email
         div.contact-links
-          a(href="#" target="_blank") Instagram
-          a(href="#" target="_blank") Spotify
-          a(href="#" target="_blank") Bandcamp
+          each link in contact.socialLinks
+            a(href=link.url target="_blank")= link.name
       div.contact-card
         h2 Send a note
-        form(action="mailto:hello@fwb.clintspacewood.com" method="post" enctype="text/plain")
+        form(action=`mailto:${contact.email}` method="post" enctype="text/plain")
           label(for="name") Name
           input#name(type="text" name="name" placeholder="Your name" required)
           label(for="email") Email

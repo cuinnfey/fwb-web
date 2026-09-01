@@ -1,26 +1,34 @@
 [
   {
-    "name": "Debut Single",
-    "tag": "Single",
-    "year": "2024",
-    "blurb": "The first song from fwb. Swap in the real title, cover art, and a streaming link.",
-    "image": "",
-    "link": "#"
-  },
-  {
-    "name": "Second Release",
+    "name": "Greatest Hits, Vol. 69",
     "tag": "EP",
-    "year": "2025",
-    "blurb": "A short description of this release. Replace with real copy, cover art, and a link out.",
-    "image": "",
-    "link": "#"
+    "year": "2022",
+    "blurb": "Debut EP",
+    "image": "/images/fwb-artist.png",
+    "link": "https://open.spotify.com/album/0sTUa9VMXaR4TnEFs1Ce4F"
   },
   {
-    "name": "Live Session",
-    "tag": "Live",
-    "year": "2025",
-    "blurb": "A recorded live take. Add the real details, artwork, and a place for people to listen.",
-    "image": "",
-    "link": "#"
+    "name": "Counch in the Rain",
+    "tag": "Single",
+    "year": "2022",
+    "blurb": "Song about the abandoned Seattle couches",
+    "image": "/images/couch-in-the-rain-art.png",
+    "link": "https://open.spotify.com/track/2hAQUMgxoBHlBl6MscLpM6"
+  },
+  {
+    "name": "Self Checkout",
+    "tag": "Single",
+    "year": "2022",
+    "blurb": "Second coming of (Christ) single",
+    "image": "/images/self-checkout-art.png",
+    "link": "https://open.spotify.com/track/5MJR2z73PaTcbPnXiLAxw4"
+  },
+  {
+    "name": "Rome",
+    "tag": "Single",
+    "year": "2022",
+    "blurb": "Debut single",
+    "image": "/images/rome-art.png",
+    "link": "https://open.spotify.com/track/41Fv17VUTY0AByazDh5VY6"
   }
 ]
